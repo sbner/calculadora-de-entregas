@@ -2,9 +2,13 @@
 
 Esse projeto foi criado com [Angular CLI](https://github.com/angular/angular-cli) versão 11.2.6.
 
+## Instalando todos os pacotes e dependências
+
+Rode `npm start`
+
 ## Como rodar o servidor de desenvolvimento
 
-Rode `ng serve` para o servidor. Navegue para `http://localhost:4200/`.
+Rode `ng serve` no diretório com os arquivos para executar o servidor de desenvolvimento. Navegue para `http://localhost:4200/`.
 
 ## Informações úteis
 
