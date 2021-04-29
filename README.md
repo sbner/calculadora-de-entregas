@@ -18,7 +18,7 @@ Uma sugestão de melhoria futura para esse projeto seria a utilização de um pi
 
 ## Tecnologias extras utilizadas
 
--Bootstrap (versão para o angular -> '[ng-bootstrap](https://ng-bootstrap.github.io/#/home)') - Para ajudar e agilizar o layout.
+-Bootstrap (versão para o angular -> [ng-bootstrap](https://ng-bootstrap.github.io/#/home)) - Para ajudar e agilizar o layout.
 
 -FontAwesome ([versão para angular](https://github.com/FortAwesome/angular-fontawesome')
 
