@@ -1,0 +1,34 @@
+.remove-button {
+    background-color: #ff6347;
+    &:hover {
+        background-color: #e65940;
+    }
+}
+
+.edit-button {
+    background-color: #0C4A60;
+    &:hover {
+        background-color: #0a3b4d;
+    }
+}
+
+.save-button {
+    background-color: #0C4A60;
+    &:hover {
+        background-color: #0a3b4d;
+    }
+}
+
+.table-button {
+    border: none;
+    border-radius: .25rem;
+    padding: .1rem .5rem;
+}
+
+.btn {
+    background-color: #0C4A60;
+    color: #fff;
+    &:hover {
+        background-color: #0a3b4d;
+    }
+}

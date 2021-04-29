@@ -1,0 +1,30 @@
+button {
+    // Hides buttons on print
+    @media print {
+        display: none;
+    }
+}
+#back-button {
+    background-color: #EF6C33;
+    color: #fff;
+    &:hover {
+        background-color:#bf5629;
+    }
+}
+
+#print-button {
+    background-color: #0C4A60;
+    color: #fff;
+    &:hover {
+        background-color:#0A3B4D;
+    }
+}
+
+#table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+thead{
+    background-color: rgba(255,255,255,.7);
+}

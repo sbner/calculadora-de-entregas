@@ -1,0 +1,9 @@
+<form #form="ngForm" class="d-flex justify-content-between" (ngSubmit)="onSubmit(form.value)" novalidate>
+    <input required ngModel minlength="2" name="name" id="name" type="text" aria-label="First name" class="form-control" placeholder="Nome">
+    <input required ngModel minlength="8" maxlength="8" name="cep" id="cep" type="text" aria-label="First name" class="form-control" placeholder="CEP: 01234567">
+    <button type="submit" class="btn" [disabled]="!form.valid">Adicionar</button>
+</form> 
+<div class="d-flex flex-column">
+    <small>*Todos os campos são obrigatórios</small>
+    <small class="errorMessage" *ngIf="error">{{errorMessage}}</small>    
+</div>

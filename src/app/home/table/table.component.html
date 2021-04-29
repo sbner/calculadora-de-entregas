@@ -1,0 +1,37 @@
+<form #form="ngForm">
+  <table class="table table-striped">
+    <tbody>
+      <tr *ngFor="let shipping of shippings">
+        <td>
+          <div *ngIf="!editArray.includes(shipping); else elseBlock">
+            {{shipping.name}}
+          </div>
+          <ng-template #elseBlock>
+            <input type="text" [name]="'name'+shippings.indexOf(shipping)" [(ngModel)]="shipping.name" />
+          </ng-template>
+        </td>
+        <td>
+          <div *ngIf="!editArray.includes(shipping); else elseBlock2">
+            {{shipping.cep}}
+          </div>
+          <ng-template #elseBlock2>
+            <input type="text" [name]="'cep'+shippings.indexOf(shipping)" [(ngModel)]="shipping.cep" />
+          </ng-template>
+        </td>
+        <td class="d-flex justify-content-end">
+            <button class="table-button remove-button mx-1" (click)="remove(shipping)"><fa-icon [icon]="faTrashAlt" [styles]="{'stroke': 'white', 'color': 'white'}"></fa-icon></button>
+            <div *ngIf="!editArray.includes(shipping); else elseBlock3">
+              <button class="table-button edit-button mx-1" (click)="edit(shipping)"><fa-icon [icon]="faPen" [styles]="{'stroke': 'white', 'color': 'white'}"></fa-icon></button>
+            </div>
+            <ng-template #elseBlock3>
+              <button class="table-button save-button mx-1" (click)="save(shipping)"><fa-icon [icon]="faCheck" [styles]="{'stroke': 'white', 'color': 'white'}"></fa-icon></button>
+            </ng-template>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+
+<div  class="d-flex justify-content-end">
+  <button *ngIf="shippings.length > 0" class="btn" (click)="sendShipping()">Calcular Fretes</button>
+</div>

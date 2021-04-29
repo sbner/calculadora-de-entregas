@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MainService } from 'src/services/main.service';
 
 @Component({
   selector: 'ht-root',

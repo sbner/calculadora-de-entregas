@@ -1,0 +1,36 @@
+<div class="container-sm">
+    <div *ngIf='shippings.length > 0; else elseBlock'>
+        <h5>Confira seu orçamento:</h5>
+        <div id="table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">CEP</th>
+                    <th scope="col">UF</th>
+                    <th scope="col">Cidade</th>
+                    <th scope="col">Logradouro</th>
+                    <th scope="col">Bairro</th>
+                    <th scope="col">Frete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of shippings">
+                    <td>{{item.name}}</td>
+                    <td>{{item.cep}}</td>
+                    <td>{{item.state}}</td>
+                    <td>{{item.city}}</td>
+                    <td>{{item.street}}</td>
+                    <td>{{item.neighborhood}}</td>
+                    <td>R$ {{item.shipping}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button id="back-button" class="btn mx-2" (click)="goHome()">Voltar</button>
+            <button id="print-button" class="btn mx-2" onclick="window.print()">Imprimir</button>
+        </div>
+    </div>
+    <ng-template #elseBlock>Parece que você ainda não tem cotações.</ng-template>
+</div>
