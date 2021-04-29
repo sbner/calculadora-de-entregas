@@ -1,4 +1,4 @@
-# Calculadora de frete
+# Calculadora de frete :truck:
 
 Esse projeto foi criado com [Angular CLI](https://github.com/angular/angular-cli) versão 11.2.6.
 
