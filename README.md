@@ -10,7 +10,7 @@ Rode `ng serve` para o servidor. Navegue para `http://localhost:4200/`.
 
 Para o projeto utilizou-se somente um servidor de desenvolvimento para o front-end. Em um projeto real os dados de regra do negócio seriam provenientes de um servidor back-end - que simulei nesse caso com um 'service' separado, mas poderia facilmente ser adaptado para trabalhar com um servidor real.
 
-Uma sugestão de melhoria futura para esse projeto seria a utilizção de um pipe de máscara para o input do CEP que o usuário preenche. Procurei por bibliotecas prontas. porém não tive muito sucesso com elas.
+Uma sugestão de melhoria futura para esse projeto seria a utilização de um pipe de máscara para o input do CEP que o usuário preenche. Procurei por bibliotecas prontas. porém não tive muito sucesso com elas.
 
 ## Tecnologias extras utilizadas
 
