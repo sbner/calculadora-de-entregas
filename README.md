@@ -15,5 +15,7 @@ Se tivesse que refazer esse projeto utilizaria um pipe de máscara para o input 
 ## Tecnologias extras utilizadas
 
 -Bootstrap (versão para o angular -> '[ng-bootstrap](https://ng-bootstrap.github.io/#/home)') - Para ajudar e agilizar o layout.
+
 -FontAwesome ([versão para angular](https://github.com/FortAwesome/angular-fontawesome')
+
 -NPM para gerenciamento de pacotes.
